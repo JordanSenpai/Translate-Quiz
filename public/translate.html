@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="translateApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+</head>
+<body ng-controller="translateController">
+<form method= "get" action='/quiz'>
+<input type="submit" value="go2 quiz">
+</form>
+   <h1>Translation Application</h1>
+   
+   <form ng-submit = "submit()">
+       <input type="text" name="name" placeholder="Language of word to translate" ng-model="translate.orLanguage">
+       <input type="text" name="language" placeholder="Language of desired result" ng-model="translate.trLanguage">
+       <input type="text" name="word" placeholder="Word 2 Translate" ng-model="translate.word">
+       <input type="submit">
+   </form>
+
+   Translated Word: {{translatedWord}}
+
+<script src="main.js"></script>
+</body>
+</html>
