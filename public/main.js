@@ -16,13 +16,15 @@ $http.post('/submit', $scope.translate)
 
 }
     
+// I freak out when all the plus symbols do not line up.
+
 $scope.wordsToTranslate = ['cat', 'dog', 'bear', 'crab', 'bunny', 'cow', 'deer', 'duck', 'hedgehog', 'fox']
-$scope.spanishAnswers= ['gato', 'perro', 'oso', 'cangrejo', 'conejito', 'vaca', 'venado', 'pato', 'erizo', 'zorro']
-$scope.answer = []
-$scope.answersSubmit = function(index) {
+$scope.spanishAnswers   = ['gato', 'perro', 'oso', 'cangrejo', 'conejito', 'vaca', 'venado', 'pato', 'erizo', 'zorro']
+$scope.answer           = []
+$scope.answersSubmit    = function(index) {
 
 
-    var submissionobj = { startlang: 'en',
+    var submissionobj   = { startlang: 'en',
                             endlang: $scope.langSelect,
                             word: $scope.wordsToTranslate[index]
                         }

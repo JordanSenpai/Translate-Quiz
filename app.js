@@ -44,10 +44,12 @@ app.post('/checkanswer', function(req, res) {
   	console.log(translation.translatedText);
   	res.send(translation.translatedText)
 	});
-
-
 })
 
+// Danny Devito scares me because he is so short, but at the 
+// same time I love him because of how funny he is.
+// Also he was great in Hercules
+// and sunny with a chance
 
   ///////////////////////////////////////////////////
  // Creating Server and Listening for Connections //
