@@ -13,16 +13,16 @@ var googleTranslate = require('google-translate')("AIzaSyC0mw4NLJ7pP3LBhu7zBuis_
 var app = express();
 
 
-///////////////////////////////
-// Application Configuration //
+  ///////////////////////////////
+ // Application Configuration //
 ///////////////////////////////
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
 
-////////////
-// Routes //
+  ////////////
+ // Routes //
 ////////////
 app.get('/', function(req, res){
   res.sendFile("translate.html", {root: './public'})
@@ -49,8 +49,8 @@ app.post('/checkanswer', function(req, res) {
 })
 
 
-///////////////////////////////////////////////////
-// Creating Server and Listening for Connections //
+  ///////////////////////////////////////////////////
+ // Creating Server and Listening for Connections //
 ///////////////////////////////////////////////////
 var port = 8000
 app.listen(port, function(){
