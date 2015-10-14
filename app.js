@@ -1,15 +1,15 @@
     
-//////////////
-// Requires //
+  //////////////
+ // Requires //
 //////////////
 var express         = require('express');
 var bodyParser      = require('body-parser');
 var googleTranslate = require('google-translate')("AIzaSyC0mw4NLJ7pP3LBhu7zBuis_Xg17GJWxAk")
 
 
-///////////////////////////////
-//// Express App Object ///////
-///////////////////////////////
+  ////////////////////////
+ // Express App Object //
+////////////////////////
 var app = express();
 
 
